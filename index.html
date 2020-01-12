@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Sports Survey</title>
+</head>
+<body>
+    <h1 id="title">Sports Survey</h1>
+    <p id="description"> Thank you for your love for sports</p>
+    <form id="survey-form">
+        <div class="blocks">
+            <label class="labels" id="name-label">Name: </label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        </div>
+        
+        <div class="blocks">
+            <label class="labels" id="email-label">Email: </label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        </div>
+        
+        <div class="blocks">
+            <label class="labels" id="number-label">Age: </label>
+            <input type="number" name="age" id="number" placeholder="Enter your age" min=0 max=120>
+        </div>
+        
+        <div class="blocks">
+            <label class="labels" id="gender-label">Gender: </label>
+            <div><input type="radio" name="gender" value="male"> Male</div>
+            <div><input type="radio" name="gender" value="female"> Female</div>
+            <div><input type="radio" name="gender" value="other"> Others</div>
+        </div>
+        
+        <div class="blocks">
+            <label class="labels">Which of the following is your favourite sport? </label>
+            <select name="fav-sport" id="dropdown">
+                <option value="cricket">Cricket</option>
+                <option value="football">Football</option>
+                <option value="hockey">Hockey</option>
+                <option value="volleyball">Volleyball</option>
+                <option value="tabeltennis">Table Tennis</option>
+                <option value="rugby">Rugby</option>
+            </select>
+        </div>
+
+        <div class="blocks">
+            <label class="labels">Which of the following sports have you played? </label>
+            <div><input type="checkbox" name="cricket" value="played">Cricket<br></div>
+            <div><input type="checkbox" name="football" value="played">Football<br></div>
+            <div><input type="checkbox" name="hockey" value="played">Hockey<br></div>
+            <div><input type="checkbox" name="volleyball" value="played">Volleyball<br></div>
+            <div><input type="checkbox" name="tabeltennis" value="played">Table Tennis<br></div>
+            <div><input type="checkbox" name="rugby" value="played">Rugby<br></div>
+        </div>
+        
+        <div class="blocks">
+            <label class="labels">Any suggestions? </label>
+            <textarea name="suggestion" id="textarea" cols="30" rows="10"></textarea>
+        </div>
+        
+        <div class="blocks">
+            <input type="submit" id="submit">
+        </div>
+        
+    </form>
+</body>
+</html>

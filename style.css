@@ -1,0 +1,52 @@
+*{
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: darkslategrey;
+    font-size: 5vh;
+   
+}
+
+h1{
+    font-weight: 600;
+    margin: 2px;
+    font-size: 10vh;
+}
+p{
+    font-size: 3vh;
+}
+
+#survey-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+    width: 75vh;
+    border: 2px solid black;
+    border-radius: 5vh;
+    background-color: rgba(30, 143, 255, 0.301);
+    padding: 5vh;
+    margin: 0;
+}
+.blocks{
+    margin: 2vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#name,#email,#number{
+    height: 5vh;
+    font-size: 5vh;
+    padding: 1vh;
+    
+}
+#dropdown,#submit{
+    height: 6vh;
+    font-size: 5vh;
+    
+}
